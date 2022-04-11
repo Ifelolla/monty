@@ -4,7 +4,7 @@
  * Return: Always (0) Success
  **/
 int main(void)
-0{
+{
 	int num;
 
 	for (num = 0; num < 10; num++)

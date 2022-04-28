@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - calculates the length of a string
- * @s: string to be used
- *
- * Return: length of the string
+ * factorial - factorial n
+ * @n: integer arams
+ * Return: recursion
  */
-int _strlen_recursion(char *s)
-{
-	int sum = 0;
 
-	if (*s != '\0')
+int factorial(int n)
+{
+	if (n < 0)
 	{
-		sum++;
-		sum += _strlen_recursion(s + 1);
+		return (-1);
 	}
-	return (sum);
+
+	if (n == 1)
+	{
+		return (1);
+	}
+	return (n * factorial(n - 1));
 }
